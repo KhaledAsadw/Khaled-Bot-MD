@@ -20,7 +20,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   							{
   								name: 'single_select',
   						  	buttonParamsJson: JSON.stringify({
-  						  		title: 'Click Me',
+  						  		title: 'الازرار😀💙',
   						  		sections: [
   						  			{
   						  				title: 'ستو🖤ــرـــ🖤ـيـات🙈🖤',
@@ -30,30 +30,43 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  		    		header: 'اهلا بك',
   										      title: ' تحميل التطبيقات ',
   									    	  description: 'اضغط',
-  								    		  id: '.apk'
+  								    		  id: '.dapk2'
   						  		    	}
   						  		    ]
   						  			},
   						  			{
                         title: 'ستو🖤ــرـــ🖤ـيـات🙈🖤',
-  						  				highlight_label: 'ON',
+  						  				highlight_label: 'khaled',
   						  				rows: [
   						  					{
-  						  		    		header: 'Test',
-  										      title: 'Click Me',
-  									    	  description: 'Click Me',
-  								    		  id: 'tes'
+  						  		    		header: 'صور قطط',
+  										      title: 'قط🐈',
+  									    	  description: 'تابع قناتنا على واتس اب `https://whatsapp.com/channel/0029VaCoD2sAYlUSoRyroy1A`',
+  								    		  id: '.cat'
   						  		    	}
   						  				]
   						  			},
   						  			{
-  						  				highlight_label: 'ON',
+  						  			title: 'ستو🖤ــرـــ🖤ـيـات🙈🖤',
+  						  				highlight_label: 'khaled',
   						  				rows: [
   						  					{
-  						  		    		header: 'Test',
-  										      title: 'Click Me',
-  									    	  description: 'Click Me',
-  								    		  id: 'te'
+  						  		    		header: 'صور كلاب',
+  										      title: 'كلب🐕',
+  									    	  description: 'تابع قناتنا على واتس اب `https://whatsapp.com/channel/0029VaCoD2sAYlUSoRyroy1A`',
+  								    		  id: '.dog'
+  								    		  	}
+  						  				]
+  						  			},
+  						  			{
+  						  			title: 'ستو🖤ــرـــ🖤ـيـات🙈🖤',
+  						  				highlight_label: 'khaled',
+  						  				rows: [
+  						  					{
+  						  		    		header: 'صورة هكر',
+  										      title: '👾صور هكر',
+  									    	  description: 'تابع قناتنا على واتس اب `https://whatsapp.com/channel/0029VaCoD2sAYlUSoRyroy1A`',
+  								    		  id: '.hacker'
   						  		    	}
   						  				]
   						  			}
@@ -70,8 +83,16 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                               {
                                   name: 'cta_url',
                                   buttonParamsJson: JSON.stringify({
-                                      display_text: 'url',
+                                      display_text: 'ستو🖤ــرـــ🖤ـيـات🙈🖤',
                                       url: 'https://whatsapp.com/channel/0029VaCoD2sAYlUSoRyroy1A',
+                                      merchant_url: ''
+                                                                   })
+                              },
+                              {
+                                  name: 'cta_url',
+                                  buttonParamsJson: JSON.stringify({
+                                      display_text: 'ستو💙ــرـــ💙ـيـات🙈💙',
+                                      url: 'https://wa.me/963980677944
                                       merchant_url: ''
                              
                                   })
