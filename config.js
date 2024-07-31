@@ -38,6 +38,7 @@ global.owner = [
   ['5217294888993'],
   ['595992611272'],
   ['5219992843892'],
+  ['5493795319019'],
   ['573147616444'], 
   ['5219991402134'],
   ['5219996125657'],
@@ -81,6 +82,7 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 global.wm2 = `${dia} ${fecha}\nThe Mystic - Bot`;
 global.gt = 'The Mystic - Bot';
 global.mysticbot = 'The Mystic - Bot';
+global.channel = 'https://whatsapp.com/channel/0029Vaein6eInlqIsCXpDs3y';
 global.md = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
 global.mysticbot = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
 global.waitt = '*_[ ⏳ ] Cargando..._*';
