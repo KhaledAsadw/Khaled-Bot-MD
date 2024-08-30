@@ -3,8 +3,8 @@ import axios from 'axios';
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
 import fs from "fs";
 import yts from 'yt-search';
-import ytmp33 from '../lib/ytmp33.js';
-import ytmp44 from '../lib/ytmp44.js';
+import ytmp33 from '../src/libraries/ytmp33.js';
+import ytmp44 from '../src/libraries/ytmp44.js';
 
 let limit1 = 100;
 let limit2 = 400;
@@ -14,7 +14,7 @@ let limit_a2 = 400;
 const handler = async (m, { conn, command, args, text, usedPrefix }) => {
   const datas = global;
   const idioma = datas.db.data.users[m.sender].language;
-  const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`));
+  const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`));
   const tradutor = _translate.plugins.descargas_play;
 
   if (!text) throw `${tradutor.texto1[0]} _${usedPrefix + command} ${tradutor.texto1[1]}`;
@@ -152,7 +152,7 @@ let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
   const datas = global
   const idioma = datas.db.data.users[m.sender].language
-  const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`))
+  const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
   const tradutor = _translate.plugins.descargas_play
 
   if (!text) throw `${tradutor.texto1[0]} _${usedPrefix + command} ${tradutor.texto1[1]}`;

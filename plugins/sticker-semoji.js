@@ -1,4 +1,4 @@
-import {sticker, addExif} from '../lib/sticker.js';
+import {sticker, addExif} from '../src/libraries/sticker.js';
 import {Sticker} from 'wa-sticker-formatter';
 import fetch from 'node-fetch';
 import got from 'got';
@@ -8,7 +8,7 @@ import cheerio from 'cheerio';
 const handler = async (m, {usedPrefix, conn, args, text, command}) => {
   const datas = global
   const idioma = datas.db.data.users[m.sender].language
-  const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`))
+  const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
   const tradutor = _translate.plugins.sticker_semoji
 
   let [tipe, emoji] = text.includes('|') ? text.split('|') : args;

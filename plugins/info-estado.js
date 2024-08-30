@@ -1,15 +1,15 @@
-import { generateWAMessageFromContent } from "@whiskeysockets/baileys";
+import { generateWAMessageFromContent } from "baileys";
 import os from "os";
 import util from "util";
 import sizeFormatter from "human-readable";
-import MessageType from "@whiskeysockets/baileys";
+import MessageType from "baileys";
 import fs from "fs";
 import { performance } from "perf_hooks";
 
 const handler = async (m, { conn, usedPrefix }) => {
   const datas = global
   const idioma = datas.db.data.users[m.sender].language
-  const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`))
+  const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
   const tradutor = _translate.plugins.info_estado
 
   const _uptime = process.uptime() * 1000;
